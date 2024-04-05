@@ -8,6 +8,7 @@ import { IoMoonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import "./header.css";
 import { Link } from "react-router-dom";
+import Countdown from "../Shared/Countdown/Countdown";
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
@@ -37,18 +38,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="header-countdown">
-        <div className="days">
-          <span>00</span> <span>Days</span>
-        </div>
-        <div className="hours">
-          <span>00</span> <span>Hours</span>
-        </div>
-        <div className="minutes">
-          <span>00</span> <span>Minutes</span>
-        </div>
-        <div className="seconds">
-          <span>00</span> <span>Seconds</span>
-        </div>
+        <Countdown />
       </div>
       <div className="header-icons">
         <button>

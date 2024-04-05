@@ -63,22 +63,6 @@
 }
 
 /* MIDDLE */
-.header-countdown {
-  align-items: center;
-  display: flex;
-  gap: 14px;
-  font-size: 13px;
-  /* background-color: red; */
-}
-.days,
-.hours,
-.minutes,
-.seconds {
-  background-color: var(--primary-color);
-  padding: 10px;
-  font-weight: 700;
-  border-radius: 2px;
-}
 
 /* RIGHT */
 .header-icons {
