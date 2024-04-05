@@ -25,20 +25,22 @@ const Countdown = () => {
   });
 
   return (
-    <div className="countdown-wrapper">
-      <div className="days">
-        <span>{days < 10 ? "0" + days : days}</span> <span>Days</span>
-      </div>
-      <div className="hours">
-        <span>{hours < 10 ? "0" + hours : hours}</span> <span>Hours</span>
-      </div>
-      <div className="minutes">
-        <span> {minutes < 10 ? "0" + minutes : minutes}</span>{" "}
-        <span>Minutes</span>
-      </div>
-      <div className="seconds">
-        <span> {seconds < 10 ? "0" + seconds : seconds}</span>{" "}
-        <span>Seconds</span>
+    <div className="header-countdown">
+      <div className="countdown-wrapper">
+        <div className="days">
+          <span>{days < 10 ? "0" + days : days}</span> <span>Days</span>
+        </div>
+        <div className="hours">
+          <span>{hours < 10 ? "0" + hours : hours}</span> <span>Hours</span>
+        </div>
+        <div className="minutes">
+          <span> {minutes < 10 ? "0" + minutes : minutes}</span>{" "}
+          <span>Minutes</span>
+        </div>
+        <div className="seconds">
+          <span> {seconds < 10 ? "0" + seconds : seconds}</span>{" "}
+          <span>Seconds</span>
+        </div>
       </div>
     </div>
   );

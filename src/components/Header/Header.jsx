@@ -44,12 +44,12 @@ const Header = () => {
       <form className="header-serach-form">
         <input
           type="text"
-          placeholder="Search if you are looking for something specific ..."
+          placeholder="Search ..."
           className="header-search-input"
         />
         <button className="header-serach-btn">Search</button>
       </form>
-      <div className="header-countdown">
+      <div className="countdown">
         <BiSolidOffer className="offIcon" />
         <Countdown />
       </div>

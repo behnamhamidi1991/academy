@@ -6,6 +6,7 @@
   align-items: center;
   padding: 0 7%;
   cursor: default;
+  font-family: "Roboto";
 }
 
 /* LEFT */
@@ -21,7 +22,6 @@
   gap: 40px;
   justify-content: center;
   align-items: center;
-  background-color: red;
 }
 
 .header-links {
@@ -66,6 +66,11 @@
 }
 
 /* MIDDLE */
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 /* RIGHT */
 .header-icons {
@@ -104,30 +109,77 @@
 .header-serach-form input {
   width: 100%;
   padding: 10px 9px;
+  height: 37px;
   border: none;
   border-radius: 2px;
   font-size: 11px;
   background-color: var(--primary-color);
-}
-
-.header-serach-form button {
-  position: absolute;
-  border: none;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 10px;
   outline: none;
-  border-radius: 0 2px 2px 0;
-  right: 0;
-  top: 1px;
-  text-transform: uppercase;
-  background-color: var(--link-color);
   color: var(--text-color);
 }
 
-@media screen and (max-width: 1245px) {
-  .header-links {
+.header-serach-form button {
+  height: 37px;
+  position: absolute;
+  border: none;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 9px;
+  outline: none;
+  border-radius: 0 2px 2px 0;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+  background-color: var(--link-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 1323px) {
+  .header-logo p {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1167px) {
+  .headerWrapper {
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 1073px) {
+  /* .header-serach-form {
+    display: none;
+  } */
+
+  .countdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .countdown {
+    display: none;
+  }
+
+  .headerWrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .header-serach-form {
+    display: none;
+  }
+
+  .headerWrapper {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .headerWrapper {
+    padding: 0 5%;
   }
 }
