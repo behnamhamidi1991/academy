@@ -15,8 +15,12 @@ const Featured = () => {
     <div className="featured">
       {filteredCourses.map((item) => (
         <div key={item.id} className="featured-box">
-          <div className="featured-item">
-            <img src={item.image} alt="" />
+          <img src={item.image} alt="" />
+
+          <div className="featured-content">
+            <h2>{item.title}</h2>
+            <p>{item.description.substring(0, 199)} ...</p>
+            <button className="featured-read-btn">Read More</button>
           </div>
         </div>
       ))}
