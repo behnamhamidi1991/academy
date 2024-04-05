@@ -6,6 +6,7 @@ import logo from "../../assets/icons/acicon.png";
 import { FaUser } from "react-icons/fa6";
 import { IoMoonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
 import "./header.css";
 import { Link } from "react-router-dom";
 import Countdown from "../Shared/Countdown/Countdown";
@@ -45,7 +46,11 @@ const Header = () => {
           <FaUser className="header-icons" />
         </button>
         <button onClick={() => dispatch(toggle(!theme))}>
-          <IoMoonSharp className="header-icons" />
+          {theme ? (
+            <FiSun className="header-icons" />
+          ) : (
+            <IoMoonSharp className="header-icons" />
+          )}
         </button>
         <button>
           <FaShoppingCart className="header-icons" />
