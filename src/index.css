@@ -56,5 +56,5 @@ span {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px;
-  height: 100vh;
+  height: 100%;
 }

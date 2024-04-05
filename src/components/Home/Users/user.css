@@ -26,3 +26,9 @@
     linear-gradient(to top, var(--red-color), rgb(246, 130, 36)) border-box;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 725px) {
+  .userWrapper {
+    padding: 20px 4%;
+  }
+}
