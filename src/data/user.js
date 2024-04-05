@@ -1,24 +1,24 @@
 // @ts-nocheck
-import man1 from "./assets/images/people/man1.jpg";
-import man2 from "./assets/images/people/man2.jpg";
-import man3 from "./assets/images/people/man3.jpg";
-import man4 from "./assets/images/people/man4.jpg";
-import man5 from "./assets/images/people/man5.jpg";
-import man6 from "./assets/images/people/man6.jpg";
-import man7 from "./assets/images/people/man7.jpg";
-import man8 from "./assets/images/people/man8.jpg";
-import man9 from "./assets/images/people/man9.jpg";
-import man10 from "./assets/images/people/man10.jpg";
-import man11 from "./assets/images/people/man11.jpg";
-import woman1 from "./assets/images/people/woman1.jpg";
-import woman2 from "./assets/images/people/woman2.jpg";
-import woman3 from "./assets/images/people/woman3.jpg";
-import woman4 from "./assets/images/people/woman4.jpg";
-import woman5 from "./assets/images/people/woman5.jpg";
-import woman6 from "./assets/images/people/woman6.jpg";
-import woman7 from "./assets/images/people/woman7.jpg";
-import woman8 from "./assets/images/people/woman8.jpg";
-import woman9 from "./assets/images/people/woman9.jpg";
+import man1 from "../assets/images/people/man1.jpg";
+import man4 from "../assets/images/people/man4.jpg";
+import man3 from "../assets/images/people/man3.jpg";
+import man2 from "../assets/images/people/man2.jpg";
+import man5 from "../assets/images/people/man5.jpg";
+import man6 from "../assets/images/people/man6.jpg";
+import man7 from "../assets/images/people/man7.jpg";
+import man8 from "../assets/images/people/man8.jpg";
+import man9 from "../assets/images/people/man9.jpg";
+import man10 from "../assets/images/people/man10.jpg";
+import man11 from "../assets/images/people/man11.jpg";
+import woman1 from "../assets/images/people/woman1.jpg";
+import woman2 from "../assets/images/people/woman2.jpg";
+import woman3 from "../assets/images/people/woman3.jpg";
+import woman4 from "../assets/images/people/woman4.jpg";
+import woman5 from "../assets/images/people/woman5.jpg";
+import woman6 from "../assets/images/people/woman6.jpg";
+import woman7 from "../assets/images/people/woman7.jpg";
+import woman8 from "../assets/images/people/woman8.jpg";
+import woman9 from "../assets/images/people/woman9.jpg";
 
 export const users = [
   {
