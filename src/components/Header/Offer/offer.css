@@ -1,0 +1,42 @@
+.offer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  height: 22px;
+  background: linear-gradient(
+    160deg,
+    var(--red-color),
+    var(--orange-color),
+    rgb(246, 130, 36)
+  );
+  align-items: center;
+  position: relative;
+}
+
+.offer p {
+  font-size: 11px;
+}
+
+.offLink {
+  font-size: 11px;
+  color: #fff;
+  background-color: var(--red-color);
+  border-radius: 10px;
+  padding: 1px 3px;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.hideOffer {
+  display: none;
+}
