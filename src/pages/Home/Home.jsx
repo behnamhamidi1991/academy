@@ -5,8 +5,8 @@ import Featured from "../../components/Home/Featured/Featured";
 const Home = () => {
   return (
     <div>
-      <User />
-      <Featured />
+      {/* <User /> */}
+      {/* <Featured /> */}
     </div>
   );
 };
