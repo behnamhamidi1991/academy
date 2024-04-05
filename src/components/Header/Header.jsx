@@ -7,6 +7,8 @@ import { FaUser } from "react-icons/fa6";
 import { IoMoonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
+import { BiSolidOffer } from "react-icons/bi";
+
 import "./header.css";
 import { Link } from "react-router-dom";
 import Countdown from "../Shared/Countdown/Countdown";
@@ -39,6 +41,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="header-countdown">
+        <BiSolidOffer className="offIcon" />
         <Countdown />
       </div>
       <div className="header-icons">
