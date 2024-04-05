@@ -1,0 +1,28 @@
+.userWrapper {
+  padding: 20px 10%;
+}
+
+.userContainer {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.singleUser {
+  cursor: pointer;
+}
+
+.singleUser img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--red-color), rgb(246, 130, 36)) padding-box,
+    linear-gradient(to top, var(--red-color), rgb(246, 130, 36)) border-box;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

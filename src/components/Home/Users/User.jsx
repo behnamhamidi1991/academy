@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { users } from "../../../data";
 
 import "./user.css";
 import "swiper/css";
@@ -8,19 +9,20 @@ import "swiper/css/pagination";
 
 const User = () => {
   return (
-    <>
+    <div className="userWrapper">
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        slidesPerView={15}
+        spaceBetween={10}
         modules={[Pagination]}
         className="userContainer"
       >
-        <SwiperSlide className="singleUser">Slide 1</SwiperSlide>
+        {users.map((item) => (
+          <SwiperSlide key={item.id} className="singleUser">
+            <img src={item.image} alt={item.name} />
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

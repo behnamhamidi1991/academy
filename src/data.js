@@ -1,5 +1,24 @@
 // @ts-nocheck
 import man1 from "./assets/images/people/man1.jpg";
+import man2 from "./assets/images/people/man2.jpg";
+import man3 from "./assets/images/people/man3.jpg";
+import man4 from "./assets/images/people/man4.jpg";
+import man5 from "./assets/images/people/man5.jpg";
+import man6 from "./assets/images/people/man6.jpg";
+import man7 from "./assets/images/people/man7.jpg";
+import man8 from "./assets/images/people/man8.jpg";
+import man9 from "./assets/images/people/man9.jpg";
+import man10 from "./assets/images/people/man10.jpg";
+import man11 from "./assets/images/people/man11.jpg";
+import woman1 from "./assets/images/people/woman1.jpg";
+import woman2 from "./assets/images/people/woman2.jpg";
+import woman3 from "./assets/images/people/woman3.jpg";
+import woman4 from "./assets/images/people/woman4.jpg";
+import woman5 from "./assets/images/people/woman5.jpg";
+import woman6 from "./assets/images/people/woman6.jpg";
+import woman7 from "./assets/images/people/woman7.jpg";
+import woman8 from "./assets/images/people/woman8.jpg";
+import woman9 from "./assets/images/people/woman9.jpg";
 
 export const users = [
   {
@@ -8,6 +27,139 @@ export const users = [
     image: man1,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 2,
+    name: "Dalon Smith",
+    image: man2,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 3,
+    name: "Anita Wane",
+    image: woman2,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 4,
+    name: "Rebecca Sylvie",
+    image: woman3,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 5,
+    name: "Ali Farhadi",
+    image: man3,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 6,
+    name: "Maryam Zamani",
+    image: woman1,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 7,
+    name: "James Bishop",
+    image: man4,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 8,
+    name: "Mark Antony",
+    image: man5,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 9,
+    name: "Robin Viera",
+    image: woman4,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 10,
+    name: "Martina Lopez",
+    image: woman5,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 11,
+    name: "Alexa Sancez",
+    image: woman6,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 12,
+    name: "Eva Martinez",
+    image: woman7,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 13,
+    name: "Eliot Martinez",
+    image: man6,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 14,
+    name: "Elon Hookman",
+    image: man7,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 15,
+    name: "Thomas Jef",
+    image: man8,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 16,
+    name: "Killyan Traversen",
+    image: man9,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  },
+  {
+    id: 17,
+    name: "Adam Davis",
+    image: man11,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 18,
+    name: "Veronica Dave",
+    image: woman9,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 19,
+    name: "Lily Vera",
+    image: woman8,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
+  },
+  {
+    id: 20,
+    name: "Bryan James",
+    image: man10,
+    comment:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
 ];
 
