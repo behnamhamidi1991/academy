@@ -11,7 +11,7 @@ const User = () => {
   return (
     <div className="userWrapper">
       <Swiper
-        slidesPerView={15}
+        slidesPerView={17}
         spaceBetween={10}
         modules={[Pagination]}
         className="userContainer"
