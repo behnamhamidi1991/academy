@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggle } from "../../features/themeSlice";
+// @ts-ignore
 import logo from "../../assets/icons/acicon.png";
 import { FaUser } from "react-icons/fa6";
 import { IoMoonSharp } from "react-icons/io5";
@@ -36,7 +37,18 @@ const Header = () => {
         </ul>
       </div>
       <div className="header-countdown">
-        <span>00</span>: <span>00</span>: <span>00</span>: <span>00</span>
+        <div className="days">
+          <span>00</span> <span>Days</span>
+        </div>
+        <div className="hours">
+          <span>00</span> <span>Hours</span>
+        </div>
+        <div className="minutes">
+          <span>00</span> <span>Minutes</span>
+        </div>
+        <div className="seconds">
+          <span>00</span> <span>Seconds</span>
+        </div>
       </div>
       <div className="header-icons">
         <button>
