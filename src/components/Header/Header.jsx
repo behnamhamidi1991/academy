@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggle } from "../../features/themeSlice";
 // @ts-ignore
@@ -16,6 +16,8 @@ import Countdown from "../Shared/Countdown/Countdown";
 import Megamenu from "./Megamenu/Megamenu";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   const theme = useSelector((state) => state.theme.dark);
   const dispatch = useDispatch();
 
@@ -56,12 +58,17 @@ const Header = () => {
           <button>
             <FaShoppingCart className="header-icons" />
           </button>
-          <button>
+          <button onClick={() => setOpenMenu(!openMenu)}>
             <GiHamburgerMenu className="header-icons" />
           </button>
         </div>
       </header>
-      <Megamenu />
+      {openMenu && (
+        <div>
+          {" "}
+          <Megamenu />{" "}
+        </div>
+      )}
     </div>
   );
 };
