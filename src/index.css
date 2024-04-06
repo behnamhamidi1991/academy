@@ -48,7 +48,8 @@ h6 {
 
 p,
 div,
-span {
+span,
+button {
   font-family: "Roboto";
 }
 

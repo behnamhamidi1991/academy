@@ -37,6 +37,7 @@ export const courses = [
     offprice: 0,
     students: 4589,
     rate: 7.8,
+    category: "language",
   },
   {
     id: "2",
@@ -49,6 +50,7 @@ export const courses = [
     offprice: 0,
     students: 4589,
     rate: 9.0,
+    category: "programming",
   },
   {
     id: "3",
@@ -61,6 +63,7 @@ export const courses = [
     offprice: 0,
     students: 4589,
     rate: 8.2,
+    category: "cooking",
   },
   {
     id: "4",
@@ -73,6 +76,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 9.5,
+    category: "barista",
   },
   {
     id: "5",
@@ -85,6 +89,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 9.5,
+    category: "science",
   },
   {
     id: "6",
@@ -97,6 +102,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 9.5,
+    category: "science",
   },
   {
     id: "7",
@@ -109,6 +115,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 9.5,
+    category: "language",
   },
   {
     id: "8",
@@ -121,6 +128,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 7.5,
+    category: "cooking",
   },
 
   {
@@ -134,6 +142,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 6.2,
+    category: "language",
   },
   {
     id: "10",
@@ -146,6 +155,7 @@ export const courses = [
     offprice: 0,
     students: 837,
     rate: 9.2,
+    category: "language",
   },
   {
     id: "11",
@@ -158,6 +168,7 @@ export const courses = [
     offprice: 0,
     students: 1546,
     rate: 7.2,
+    category: "trading",
   },
   {
     id: "12",
@@ -170,6 +181,7 @@ export const courses = [
     offprice: 0,
     students: 1546,
     rate: 7.2,
+    category: "programming",
   },
   {
     id: "25",
@@ -182,6 +194,7 @@ export const courses = [
     offprice: 0,
     students: 423,
     rate: 6.8,
+    category: "music",
   },
   {
     id: "13",
@@ -194,6 +207,7 @@ export const courses = [
     offprice: 0,
     students: 2456,
     rate: 8.8,
+    category: "language",
   },
   {
     id: "14",
@@ -206,6 +220,7 @@ export const courses = [
     offprice: 0,
     students: 342,
     rate: 6.5,
+    category: "fashion",
   },
   {
     id: "15",
@@ -218,6 +233,7 @@ export const courses = [
     offprice: 0,
     students: 342,
     rate: 6.5,
+    category: "trading",
   },
   {
     id: "16",
@@ -230,6 +246,7 @@ export const courses = [
     offprice: 0,
     students: 789,
     rate: 8.5,
+    category: "language",
   },
   {
     id: "17",
@@ -242,6 +259,7 @@ export const courses = [
     offprice: 0,
     students: 1254,
     rate: 8.5,
+    category: "language",
   },
   {
     id: "18",
@@ -254,6 +272,7 @@ export const courses = [
     offprice: 0,
     students: 1254,
     rate: 8.5,
+    category: "music",
   },
 
   {
@@ -267,6 +286,7 @@ export const courses = [
     offprice: 0,
     students: 2456,
     rate: 8.5,
+    category: "programming",
   },
   {
     id: "20",
@@ -279,10 +299,11 @@ export const courses = [
     offprice: 0,
     students: 2456,
     rate: 8.5,
+    category: "language",
   },
   {
     id: "21",
-    title: "Russian Course A1 - C1",
+    title: "Spanish Course A1 - C1",
     image: sp,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -291,6 +312,7 @@ export const courses = [
     offprice: 0,
     students: 2035,
     rate: 9.5,
+    category: "language",
   },
   {
     id: "22",
@@ -303,6 +325,7 @@ export const courses = [
     offprice: 0,
     students: 768,
     rate: 7.4,
+    category: "programming",
   },
 
   {
@@ -316,6 +339,7 @@ export const courses = [
     offprice: 0,
     students: 479,
     rate: 7.2,
+    category: "music",
   },
   {
     id: "24",
@@ -328,5 +352,6 @@ export const courses = [
     offprice: 0,
     students: 2432,
     rate: 8.4,
+    category: "language",
   },
 ];

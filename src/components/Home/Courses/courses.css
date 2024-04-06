@@ -1,0 +1,130 @@
+.courses {
+  padding: 100px 10%;
+}
+
+.courses-header {
+  margin-bottom: 20px;
+}
+
+.courses-header h2 {
+  font-weight: 300;
+}
+
+.courses-header p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.coursesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 10px;
+}
+
+.courses-box img {
+  width: 100%;
+}
+.courses-box {
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.1);
+}
+
+.courses-box-content {
+  padding: 10px 15px;
+}
+
+.courses-box-content h3 {
+  font-size: 16px;
+}
+
+.courses-box-content-description {
+  font-size: 14px;
+}
+
+.course-box-content-details {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin: 9px 0;
+}
+
+.course-box-content-details span {
+  padding: 3px 5px;
+  border-radius: 1px;
+}
+
+.course-box-content-details span:first-child {
+  background-color: var(--link-color);
+  color: var(--text-color);
+}
+
+.course-box-content-details span:nth-child(2) {
+  background-color: var(--link-color);
+  color: var(--text-color);
+}
+
+.course-box-content-details span:last-child {
+  background-color: var(--link-color);
+  color: var(--text-color);
+}
+
+.courses-btnContainer {
+  margin: 5px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.courses-readBtn {
+  background-color: var(--link-color);
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 4px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.courses-buyBtn {
+  background-color: var(--link-color);
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 4px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.moreCourses {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--red-color);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+  margin-top: 20px;
+}
+
+.moreCourses:hover {
+  background-color: var(--orange-color);
+}
+
+@media screen and (max-width: 750px) {
+  .courses {
+    padding: 70px 4%;
+  }
+}
