@@ -13,65 +13,56 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import "./header.css";
 import { Link } from "react-router-dom";
 import Countdown from "../Shared/Countdown/Countdown";
+import Megamenu from "./Megamenu/Megamenu";
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
   const dispatch = useDispatch();
 
   return (
-    <header className={theme ? "headerWrapper dark" : "headerWrapper light"}>
-      <div className="header-logo-links">
-        <Link to="/" className="header-logo">
-          <img src={logo} alt="logo" className="header-logo-image" />
-          <p>Deep Learn Academy</p>
-        </Link>
-        {/* <ul className="header-links">
-          <Link to="/" className="nav-item">
-            Home
+    <div
+      className={theme ? "headerMenuWrapper dark" : "headerMenuWrapper light"}
+    >
+      <header className={theme ? "headerWrapper dark" : "headerWrapper light"}>
+        <div className="header-logo-links">
+          <Link to="/" className="header-logo">
+            <img src={logo} alt="logo" className="header-logo-image" />
+            <p>Deep Learn Academy</p>
           </Link>
-          <button className="nav-item navBtn">Menu</button>
-          <Link to="/" className="nav-item">
-            Blog
-          </Link>
-          <Link to="/" className="nav-item">
-            About
-          </Link>
-          <Link to="/" className="nav-item">
-            Contact
-          </Link>
-        </ul> */}
-      </div>
-      <form className="header-serach-form">
-        <input
-          type="text"
-          placeholder="Search ..."
-          className="header-search-input"
-        />
-        <button className="header-serach-btn">Search</button>
-      </form>
-      <div className="countdown">
-        <BiSolidOffer className="offIcon" />
-        <Countdown />
-      </div>
-      <div className="header-icons">
-        <button>
-          <FaUser className="header-icons" />
-        </button>
-        <button onClick={() => dispatch(toggle(!theme))}>
-          {theme ? (
-            <FiSun className="header-icons" />
-          ) : (
-            <IoMoonSharp className="header-icons" />
-          )}
-        </button>
-        <button>
-          <FaShoppingCart className="header-icons" />
-        </button>
-        <button>
-          <GiHamburgerMenu className="header-icons" />
-        </button>
-      </div>
-    </header>
+        </div>
+        <form className="header-serach-form">
+          <input
+            type="text"
+            placeholder="Search ..."
+            className="header-search-input"
+          />
+          <button className="header-serach-btn">Search</button>
+        </form>
+        <div className="countdown">
+          <BiSolidOffer className="offIcon" />
+          <Countdown />
+        </div>
+        <div className="header-icons">
+          <button>
+            <FaUser className="header-icons" />
+          </button>
+          <button onClick={() => dispatch(toggle(!theme))}>
+            {theme ? (
+              <FiSun className="header-icons" />
+            ) : (
+              <IoMoonSharp className="header-icons" />
+            )}
+          </button>
+          <button>
+            <FaShoppingCart className="header-icons" />
+          </button>
+          <button>
+            <GiHamburgerMenu className="header-icons" />
+          </button>
+        </div>
+      </header>
+      <Megamenu />
+    </div>
   );
 };
 

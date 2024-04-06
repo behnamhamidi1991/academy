@@ -9,6 +9,10 @@
   font-family: "Roboto";
 }
 
+.headerMenuWrapper {
+  position: relative;
+}
+
 /* LEFT */
 
 .headerWrapper {
