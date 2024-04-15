@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggle } from "../../features/themeSlice";
 // @ts-ignore
@@ -9,7 +9,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
 import { BiSolidOffer } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import "./header.css";
 import { Link } from "react-router-dom";
 import Countdown from "../Shared/Countdown/Countdown";
@@ -17,14 +16,34 @@ import Megamenu from "./Megamenu/Megamenu";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== undefined) {
+        const threshold = 30;
+        const currentScrollPos = window.pageYOffset;
+        const shouldBeSticky = currentScrollPos > threshold;
+
+        if (shouldBeSticky !== isSticky) {
+          setIsSticky(shouldBeSticky);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isSticky]);
+
+  const theaderClass = isSticky
+    ? "headerMenuWrapper fixed"
+    : "headerMenuWrapper";
 
   const theme = useSelector((state) => state.theme.dark);
   const dispatch = useDispatch();
 
   return (
-    <div
-      className={theme ? "headerMenuWrapper dark" : "headerMenuWrapper light"}
-    >
+    <div className={theaderClass}>
       <header className={theme ? "headerWrapper dark" : "headerWrapper light"}>
         <div className="header-logo-links">
           <Link to="/" className="header-logo">

@@ -11,6 +11,28 @@
 
 .headerMenuWrapper {
   position: relative;
+  transform: 0.2s;
+}
+
+.headerWrapper.hidden {
+  top: -100%;
+}
+
+.headerWrapper.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
 }
 
 /* LEFT */
