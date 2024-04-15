@@ -48,6 +48,8 @@
   gap: 10px;
   align-items: center;
   padding: 15px;
+  transition: all ease-in-out 0.2s;
+  color: var(--text-colora);
 }
 
 .searchBarBox:hover {
