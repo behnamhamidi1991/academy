@@ -45,6 +45,8 @@
 
 .courses-box-content-description {
   font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
 .course-box-content-details {
@@ -53,11 +55,13 @@
   flex-wrap: wrap;
   font-size: 14px;
   margin: 9px 0;
+  cursor: default;
 }
 
 .course-box-content-details span {
   padding: 3px 5px;
   border-radius: 1px;
+  font-size: 13px;
 }
 
 .course-box-content-details span:first-child {

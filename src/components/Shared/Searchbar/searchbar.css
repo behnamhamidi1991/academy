@@ -1,0 +1,60 @@
+.header-serach-form input {
+  width: 100%;
+  padding: 10px 9px;
+  height: 37px;
+  border: none;
+  border-radius: 2px;
+  font-size: 11px;
+  background-color: var(--primary-color);
+  outline: none;
+  color: var(--text-color);
+}
+
+.header-serach-form button {
+  height: 37px;
+  position: absolute;
+  border: none;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 9px;
+  outline: none;
+  border-radius: 0 2px 2px 0;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+  background-color: var(--link-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+.searchBarResult {
+  position: absolute;
+  width: 670px;
+  height: fit-content;
+  top: 55px;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.searchBarBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.searchBarBox:hover {
+  background-color: var(--link-color);
+}
+
+.searchBarBox img {
+  width: 70px;
+  object-fit: cover;
+}

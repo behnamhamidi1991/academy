@@ -13,6 +13,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import Countdown from "../Shared/Countdown/Countdown";
 import Megamenu from "./Megamenu/Megamenu";
+import Searchbar from "../Shared/Searchbar/Searchbar";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -51,14 +52,9 @@ const Header = () => {
             <p>Deep Learn Academy</p>
           </Link>
         </div>
-        <form className="header-serach-form">
-          <input
-            type="text"
-            placeholder="Search ..."
-            className="header-search-input"
-          />
-          <button className="header-serach-btn">Search</button>
-        </form>
+        <div className="header-serach-form">
+          <Searchbar />
+        </div>
         <div className="countdown">
           <BiSolidOffer className="offIcon" />
           <Countdown />

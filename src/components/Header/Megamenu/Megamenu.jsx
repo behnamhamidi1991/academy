@@ -21,10 +21,13 @@ import { HiPaintBrush } from "react-icons/hi2";
 import { CiStreamOn } from "react-icons/ci";
 import { FaChartLine } from "react-icons/fa";
 import { FaSteamSymbol } from "react-icons/fa6";
+import { useSelector, useDispatch } from "react-redux";
 
 const Megamenu = () => {
+  const theme = useSelector((state) => state.theme.dark);
+
   return (
-    <div className="mega-menu">
+    <div className={theme ? "mega-menu dark" : "mega-menu light"}>
       <ul>
         <li>
           <IoMdHome className="mega-menu-icon" />

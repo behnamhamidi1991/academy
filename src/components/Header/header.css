@@ -132,36 +132,6 @@
   position: relative;
 }
 
-.header-serach-form input {
-  width: 100%;
-  padding: 10px 9px;
-  height: 37px;
-  border: none;
-  border-radius: 2px;
-  font-size: 11px;
-  background-color: var(--primary-color);
-  outline: none;
-  color: var(--text-color);
-}
-
-.header-serach-form button {
-  height: 37px;
-  position: absolute;
-  border: none;
-  font-size: 10px;
-  font-weight: 800;
-  padding: 9px;
-  outline: none;
-  border-radius: 0 2px 2px 0;
-  right: 0;
-  top: 0;
-  text-transform: uppercase;
-  background-color: var(--link-color);
-  color: var(--text-color);
-  cursor: pointer;
-  font-family: "Roboto";
-}
-
 @media screen and (max-width: 1323px) {
   .header-logo p {
     display: none;
