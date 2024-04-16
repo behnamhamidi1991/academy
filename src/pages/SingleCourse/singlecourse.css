@@ -96,3 +96,15 @@
 .single-course-other-courses-box:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1657px) {
+  .single-course {
+    padding: 80px 4%;
+  }
+}
+
+@media screen and (max-width: 1657px) {
+  .single-course-left-wrapper {
+    display: none;
+  }
+}
