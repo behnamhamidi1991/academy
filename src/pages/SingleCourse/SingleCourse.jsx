@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { courses } from "../../data/courses";
 import "./singlecourse.css";
 import Comments from "../../components/Shared/Comments/Comments";
@@ -8,12 +8,23 @@ import { IoMdPricetags } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 
 const SingleCourse = () => {
+  // Get the item id
   const params = useParams();
   const id = params.id;
 
+  // Find the course by id
   const singleCourse = courses.find((item) => item.id === id);
 
+  // Eliminate the course your seeing
   const otherCourses = courses.filter((item) => item.id !== id);
+
+  // Start the page from the top
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="single-course">
       <div className="singe-course-left">

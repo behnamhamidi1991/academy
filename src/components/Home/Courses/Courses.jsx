@@ -3,6 +3,7 @@ import "./courses.css";
 import { courses } from "../../../data/courses";
 import { FaShoppingCart } from "react-icons/fa";
 import { PiStudentFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [displayCourses, setDisplayCourses] = useState([]);
@@ -48,7 +49,9 @@ const Courses = () => {
                   </span>
                 </div>
                 <div className="courses-btnContainer">
-                  <button className="courses-readBtn">Read More</button>
+                  <Link to={`/courses/${item.id}`} className="courses-readBtn">
+                    Read More
+                  </Link>
                   <button className="courses-buyBtn">
                     <FaShoppingCart />
                   </button>
