@@ -1,0 +1,11 @@
+.HomecountDownContainer {
+  display: none;
+}
+
+@media screen and (max-width: 1073px) {
+  .HomecountDownContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

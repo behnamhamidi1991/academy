@@ -19,3 +19,24 @@
   font-weight: 700;
   border-radius: 2px;
 }
+
+@media screen and (max-width: 1073px) {
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 10px;
+  }
+}
