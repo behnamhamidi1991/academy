@@ -1,6 +1,7 @@
 import React from "react";
 import "./featured.css";
 import { courses } from "../../../data/courses";
+import { Link } from "react-router-dom";
 
 const Featured = () => {
   const selectedIds = [8, 21, 15, 13, 12, 5];
@@ -20,7 +21,9 @@ const Featured = () => {
           <div className="featured-content">
             <h2>{item.title}</h2>
             <p>{item.description.substring(0, 199)} ...</p>
-            <button className="featured-read-btn">Read More</button>
+            <Link to={`/courses/${item.id}`} className="featured-read-btn">
+              Read More
+            </Link>
           </div>
         </div>
       ))}
