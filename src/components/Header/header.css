@@ -11,19 +11,19 @@
 
 .headerMenuWrapper {
   position: relative;
-  transform: 0.2s;
+  transition: top 0.5 ease-in-out;
 }
 
-.headerWrapper.hidden {
-  top: -100%;
-}
-
-.headerWrapper.fixed {
+.fixed {
   position: fixed;
-  top: 0;
+  top: -100%;
   width: 100%;
   z-index: 1000;
   animation: slideDown 0.5s;
+}
+
+.show {
+  top: 0;
 }
 
 @keyframes slideDown {

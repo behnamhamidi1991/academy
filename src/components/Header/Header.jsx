@@ -36,15 +36,13 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isSticky]);
 
-  const theaderClass = isSticky
-    ? "headerMenuWrapper fixed"
-    : "headerMenuWrapper";
+  const headerClass = `headerMenuWrapper ${isSticky ? "fixed show" : ""}`;
 
   const theme = useSelector((state) => state.theme.dark);
   const dispatch = useDispatch();
 
   return (
-    <div className={theaderClass}>
+    <div className={headerClass}>
       <header className={theme ? "headerWrapper dark" : "headerWrapper light"}>
         <div className="header-logo-links">
           <Link to="/" className="header-logo">
